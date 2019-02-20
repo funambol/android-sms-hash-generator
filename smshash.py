@@ -16,7 +16,7 @@ cmd_parser = argparse.ArgumentParser(description="Computing app's hash string fo
 cmd_parser.add_argument('keystore', type=str, help='Keystore file')
 cmd_parser.add_argument('alias', type=str, help='Keystore alias')
 cmd_parser.add_argument('keypass', type=str, help='Key password')
-cmd_parser.add_argument('appid', type=str, help='Application ID of the Android app')
+cmd_parser.add_argument('appid', type=str, help='Package name of the Android app')
 args = cmd_parser.parse_args()
 
 __encoding_name__ = "iso-8859-1" # Latin 1
