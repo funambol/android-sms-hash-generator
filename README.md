@@ -14,9 +14,10 @@ smshash.py needs four parameters:
 - alias: the alias of the keystore
 - keypass: the passphrase of the keystore
 - appid: your app's package name
+
 Example:
 ```python
-python3 smshash.py path/keystore MyAndroidKey xxxxxxxxxxxx com.company.name
+python3 smshash.py path/keystore MyAndroidKey xxxxxxxxxxxx com.example.myapp
 ```
 
 For help:
