@@ -29,7 +29,7 @@ def cmdExist(program):
 
 def exitWithError(error):
     print(error, file=sys.stderr)
-    sys.exit()
+    sys.exit(1)
 
 def call(cmd):
     cmd = subprocess.Popen(cmd, shell=True, universal_newlines=True, stdout=PIPE, stderr=PIPE, encoding=__encoding_name__)
