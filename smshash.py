@@ -44,7 +44,7 @@ def getKeytoolCommand(withxxd = False):
     if withxxd:
         return keytoolName + " " + "-alias " + args.alias + " -exportcert -keystore " + args.keystore + " -storepass " + args.keypass + " | " + getxxdName() + " -p"
     else:
-        return keytoolName + " " + "-alias " + args.alias + " -exportcert -keystore " + args.keystore + " -storepass " + args.keypass
+        return keytoolName + " " + "-alias " + args.alias + " -exportcert -keystore " + args.keystore + " -storepass \"" + args.keypass + "\""
 
 def getxxdName():
     xxdName = "xxd"
